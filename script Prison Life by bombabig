@@ -1,0 +1,81 @@
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("bombabigSCRIPTtop", "RJTheme3")
+
+local Tab = Window:NewTab("Credits")
+
+local Section = Tab:NewSection("Section Name")
+
+Section:NewButton("Developer bombabig", "Developer bombabig", function()
+    print("Developer bombabig")
+end)
+
+local Tab = Window:NewTab("Script by bombabig (player)")
+
+local Section = Tab:NewSection("Section Name")
+
+
+
+Section:NewSlider ("WalkSpeed", "SliderInfo", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+
+
+Section:NewSlider("JumpPower", "SliderInfo", 500, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+	Section:NewButton("Noclip", "ButtonInfo", function()
+		local Noclip = nil
+local Clip = nil
+
+function noclip()
+	Clip = false
+	local function Nocl()
+		if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+			for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+				if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
+					v.CanCollide = false
+				end
+			end
+		end
+		wait(0.21) -- basic optimization
+	end
+	Noclip = game:GetService('RunService').Stepped:Connect(Nocl)
+end
+
+function clip()
+	if Noclip then Noclip:Disconnect() end
+	Clip = true
+end
+
+noclip() -- to toggle noclip() and clip()
+	   end)
+	   
+    
+    local Tab = Window:NewTab("Visual")
+
+    local Section = Tab:NewSection("Section Name")
+
+    Section:NewButton("WallHack", "WallHack Top", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/nqyGkWvx"))()
+    end)
+
+	local Tab = Window:NewTab("Teleport")
+
+	local Section = Tab:NewSection("Section Name")
+
+	Section:NewButton("Teleport To Prison Spawn", "ButtonInfo", function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(909.701538, 99.9899826, 2389.51074, 0.804519951, 5.36828217e-08, -0.593925595, -2.57846882e-08, 1, 5.54590116e-08, 0.593925595, -2.93036955e-08, 0.804519951)
+	   end)
+
+	   Section:NewButton("Teleport To Criminal Spawn", "ButtonInfo", function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-919.496521, 95.327179, 2132.22998, -0.0364468433, -4.4275974e-09, -0.999335587, 1.88034463e-10, 1, -4.43739889e-09, 0.999335587, -3.49638707e-10, -0.0364468433)
+	   end)
+
+	   Section:NewButton("Teleport To Police Spawn", "ButtonInfo", function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(852.599304, 99.9899826, 2304.69238, -0.43496111, 4.20742161e-08, 0.900449216, -4.16303472e-08, 1, -6.68353053e-08, -0.900449216, -6.65567725e-08, -0.43496111)
+	   end)
