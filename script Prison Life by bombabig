@@ -1,20 +1,18 @@
-
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
 local Window = Library.CreateLib("bombabigSCRIPTtop", "RJTheme3")
 
 local Tab = Window:NewTab("Credits")
 
-local Section = Tab:NewSection("Section Name")
+local Section = Tab:NewSection("Script By bombabig")
 
 Section:NewButton("Developer bombabig", "Developer bombabig", function()
     print("Developer bombabig")
 end)
 
-local Tab = Window:NewTab("Script by bombabig (player)")
+local Tab = Window:NewTab("player")
 
-local Section = Tab:NewSection("Section Name")
+local Section = Tab:NewSection("Script By bombabig")
 
 
 
@@ -58,15 +56,15 @@ noclip() -- to toggle noclip() and clip()
     
     local Tab = Window:NewTab("Visual")
 
-    local Section = Tab:NewSection("Section Name")
+    local Section = Tab:NewSection("Script By bombabig")
 
     Section:NewButton("WallHack", "WallHack Top", function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/nqyGkWvx"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVSCRIPTbombabig/sad/main/esp?token=GHSAT0AAAAAAB665GY7NB5G6FTVZKQKDIYQY7R3UFQ"))()
     end)
 
 	local Tab = Window:NewTab("Teleport")
 
-	local Section = Tab:NewSection("Section Name")
+	local Section = Tab:NewSection("Script By bombabig")
 
 	Section:NewButton("Teleport To Prison Spawn", "ButtonInfo", function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(909.701538, 99.9899826, 2389.51074, 0.804519951, 5.36828217e-08, -0.593925595, -2.57846882e-08, 1, 5.54590116e-08, 0.593925595, -2.93036955e-08, 0.804519951)
@@ -79,3 +77,5 @@ noclip() -- to toggle noclip() and clip()
 	   Section:NewButton("Teleport To Police Spawn", "ButtonInfo", function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(852.599304, 99.9899826, 2304.69238, -0.43496111, 4.20742161e-08, 0.900449216, -4.16303472e-08, 1, -6.68353053e-08, -0.900449216, -6.65567725e-08, -0.43496111)
 	   end)
+
+
